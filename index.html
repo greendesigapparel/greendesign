@@ -3,73 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jersey Store</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Green Design Apparel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    .btn-center {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .galeri-img:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-  <header class="bg-white shadow p-6 text-center">
-    <h1 class="text-3xl font-bold">Jersey Keren Store</h1>
-    <p class="text-sm text-gray-600 mt-2">Tampil gaya dengan jersey pilihanmu!</p>
+<body>
+  <header class="header">
+    <a href="index.html"><img src="images/logo-jersey.png" alt="Green Design Apparel" class="logo-img"></a>
   </header>
 
-  <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Produk 1 -->
-    <div class="bg-white rounded-2xl shadow p-4">
-      <img src="https://source.unsplash.com/300x200/?soccer,jersey" alt="Jersey 1" class="rounded-xl mb-4 w-full object-cover">
-      <h2 class="text-xl font-semibold">Jersey Barcelona Home</h2>
-      <p class="text-sm text-gray-600 mt-2">Jersey official home musim terbaru, bahan adem dan nyaman dipakai.</p>
-      <p class="mt-2 font-bold text-green-600">Rp350.000</p>
-      <a 
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20Barcelona%20Home" 
-        target="_blank"
-        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
-      >Beli via WhatsApp</a>
-    </div>
+  <section class="banner">
+    <img src="images/banner.jpg" alt="Poster Iklan" class="banner-img">
+  </section>
 
-    <!-- Produk 2 -->
-    <div class="bg-white rounded-2xl shadow p-4">
-      <img src="https://source.unsplash.com/300x200/?real-madrid,jersey" alt="Jersey 2" class="rounded-xl mb-4 w-full object-cover">
-      <h2 class="text-xl font-semibold">Jersey Real Madrid Away</h2>
-      <p class="text-sm text-gray-600 mt-2">Jersey away putih elegan, cocok untuk aktivitas harian maupun olahraga.</p>
-      <p class="mt-2 font-bold text-green-600">Rp340.000</p>
-      <a 
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20Real%20Madrid%20Away" 
-        target="_blank"
-        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
-      >Beli via WhatsApp</a>
+  <main class="product-grid">
+    <div class="product-card">
+      <img src="images/timnas1.jpg" alt="Timnas Fantasy Batik Home" class="product-img">
+      <h2 class="product-name">Timnas Fantasy Batik Home</h2>
+      <p class="product-price">Rp350.000</p>
+      <a href="produk/timnas1.html" class="btn-whatsapp">Lihat Detail</a>
     </div>
-
-    <!-- Produk 3 -->
-    <div class="bg-white rounded-2xl shadow p-4">
-      <img src="https://source.unsplash.com/300x200/?indonesia,jersey" alt="Jersey 3" class="rounded-xl mb-4 w-full object-cover">
-      <h2 class="text-xl font-semibold">Jersey Timnas Indonesia</h2>
-      <p class="text-sm text-gray-600 mt-2">Dukung Garuda! Jersey resmi Timnas dengan kualitas premium.</p>
-      <p class="mt-2 font-bold text-green-600">Rp320.000</p>
-      <a 
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20Timnas%20Indonesia" 
-        target="_blank"
-        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
-      >Beli via WhatsApp</a>
+    <div class="product-card">
+      <img src="images/timnas2.jpg" alt="Timnas Fantasy Batik Away" class="product-img">
+      <h2 class="product-name">Timnas Fantasy Batik Away</h2>
+      <p class="product-price">Rp350.000</p>
+      <a href="produk/timnas2.html" class="btn-whatsapp">Lihat Detail</a>
     </div>
-
-    <!-- Produk 4 -->
-    <div class="bg-white rounded-2xl shadow p-4">
-      <img src="https://source.unsplash.com/300x200/?ac-milan,jersey" alt="Jersey 4" class="rounded-xl mb-4 w-full object-cover">
-      <h2 class="text-xl font-semibold">Jersey AC Milan Third</h2>
-      <p class="text-sm text-gray-600 mt-2">Desain modern dan sporty, jersey third AC Milan siap menemani harimu.</p>
-      <p class="mt-2 font-bold text-green-600">Rp355.000</p>
-      <a 
-        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20AC%20Milan%20Third" 
-        target="_blank"
-        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
-      >Beli via WhatsApp</a>
+    <div class="product-card">
+      <img src="images/timnas3.jpg" alt="Timnas Fantasy Retro Home - Merah Oversize" class="product-img">
+      <h2 class="product-name">Timnas Fantasy Retro Home - Merah Oversize</h2>
+      <p class="product-price">Rp370.000</p>
+      <a href="produk/timnas3.html" class="btn-whatsapp">Lihat Detail</a>
+    </div>
+    <div class="product-card">
+      <img src="images/timnas4.jpg" alt="Timnas Fantasy Retro Away - Putih Oversize" class="product-img">
+      <h2 class="product-name">Timnas Fantasy Retro Away - Putih Oversize</h2>
+      <p class="product-price">Rp370.000</p>
+      <a href="produk/timnas4.html" class="btn-whatsapp">Lihat Detail</a>
+    </div>
+    <div class="product-card">
+      <img src="images/timnas5.jpg" alt="Timnas Fantasy Retro Third - Hitam Oversize" class="product-img">
+      <h2 class="product-name">Timnas Fantasy Retro Third - Hitam Oversize</h2>
+      <p class="product-price">Rp370.000</p>
+      <a href="produk/timnas5.html" class="btn-whatsapp">Lihat Detail</a>
     </div>
   </main>
 
-  <footer class="text-center text-sm text-gray-500 mt-10 p-4">
-    &copy; 2025 Jersey Keren Store. All rights reserved.
+  <section class="galeri">
+    <h2>Galeri Pelanggan Kami</h2>
+    <div class="swiper galeri-carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/galeri1.jpg" class="galeri-img" alt=""></div>
+        <div class="swiper-slide"><img src="images/galeri2.jpg" class="galeri-img" alt=""></div>
+        <div class="swiper-slide"><img src="images/galeri3.jpg" class="galeri-img" alt=""></div>
+        <div class="swiper-slide"><img src="images/galeri4.jpg" class="galeri-img" alt=""></div>
+        <div class="swiper-slide"><img src="images/galeri5.jpg" class="galeri-img" alt=""></div>
+        <div class="swiper-slide"><img src="images/galeri6.jpg" class="galeri-img" alt=""></div>
+        <div class="swiper-slide"><img src="images/galeri7.jpg" class="galeri-img" alt=""></div>
+        <div class="swiper-slide"><img src="images/galeri8.jpg" class="galeri-img" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <p style="text-align:center;">Apa kata mereka tentang produk kami?</p>
+    <div class="swiper testimoni-carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimoni-card">
+          <img src="images/customer1.jpg" class="testimoni-img" alt="Pelanggan 1">
+          <p><strong>Alwie</strong></p>
+          <p class="rating">★★★★★</p>
+          <p>asgadsgas</p>
+        </div>
+        <div class="swiper-slide testimoni-card">
+          <img src="images/customer2.jpg" class="testimoni-img" alt="Pelanggan 2">
+          <p><strong>Budi</strong></p>
+          <p class="rating">★★★★★</p>
+          <p>asgadsgas</p>
+        </div>
+        <div class="swiper-slide testimoni-card">
+          <img src="images/customer3.jpg" class="testimoni-img" alt="Pelanggan 3">
+          <p><strong>Citra</strong></p>
+          <p class="rating">★★★★★</p>
+          <p>asgadsgas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Jangan Lewatkan! Koleksi Terbatas!</h2>
+	<div class="btn-center">
+    <a href="https://wa.me/62811555943?text=Halo%20saya%20tertarik%20dengan%20produk%20Green%20Design%20Apparel" target="_blank" class="btn-cta">Pesan Sekarang</a>
+	</div>
+  </section>
+
+  <footer class="footer">
+    <a href="https://wa.me/62811555943" target="_blank" class="btn-admin whatsapp">💬</a><br />
+    &copy; 2025 Green Design Apparel. All rights reserved.
+    <div class="social-media">
+      <a href="#"><img src="images/wa.png" alt="WhatsApp"></a>
+      <a href="#"><img src="images/ig.png" alt="Instagram"></a>
+      <a href="#"><img src="images/shopee.png" alt="Shopee"></a>
+      <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.galeri-carousel', {
+      loop: true,
+      autoplay: { delay: 2000 },
+      slidesPerView: 3,
+      spaceBetween: 10,
+    });
+
+    new Swiper('.testimoni-carousel', {
+      loop: true,
+      autoplay: { delay: 3000 },
+      slidesPerView: 1,
+    });
+  </script>
 </body>
 </html>
