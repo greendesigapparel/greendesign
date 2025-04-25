@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Contoh</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; padding: 40px; background: #f5f5f5; }
-    .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; }
-    h1 { color: #333; }
-    p { font-size: 18px; color: #666; }
-    .btn { background: #28a745; color: white; padding: 12px 20px; border: none; border-radius: 5px; text-decoration: none; font-size: 16px; }
-    .btn:hover { background: #218838; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jersey Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Tingkatkan Penjualanmu Sekarang!</h1>
-    <p>Website profesional, mobile friendly, dan cepat untuk bisnismu.</p>
-    <a href="https://wa.me/6281234567890" class="btn">Konsultasi Gratis</a>
-  </div>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-white shadow p-6 text-center">
+    <h1 class="text-3xl font-bold">Jersey Keren Store</h1>
+    <p class="text-sm text-gray-600 mt-2">Tampil gaya dengan jersey pilihanmu!</p>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Produk 1 -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="https://source.unsplash.com/300x200/?soccer,jersey" alt="Jersey 1" class="rounded-xl mb-4 w-full object-cover">
+      <h2 class="text-xl font-semibold">Jersey Barcelona Home</h2>
+      <p class="text-sm text-gray-600 mt-2">Jersey official home musim terbaru, bahan adem dan nyaman dipakai.</p>
+      <p class="mt-2 font-bold text-green-600">Rp350.000</p>
+      <a 
+        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20Barcelona%20Home" 
+        target="_blank"
+        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
+      >Beli via WhatsApp</a>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="https://source.unsplash.com/300x200/?real-madrid,jersey" alt="Jersey 2" class="rounded-xl mb-4 w-full object-cover">
+      <h2 class="text-xl font-semibold">Jersey Real Madrid Away</h2>
+      <p class="text-sm text-gray-600 mt-2">Jersey away putih elegan, cocok untuk aktivitas harian maupun olahraga.</p>
+      <p class="mt-2 font-bold text-green-600">Rp340.000</p>
+      <a 
+        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20Real%20Madrid%20Away" 
+        target="_blank"
+        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
+      >Beli via WhatsApp</a>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="https://source.unsplash.com/300x200/?indonesia,jersey" alt="Jersey 3" class="rounded-xl mb-4 w-full object-cover">
+      <h2 class="text-xl font-semibold">Jersey Timnas Indonesia</h2>
+      <p class="text-sm text-gray-600 mt-2">Dukung Garuda! Jersey resmi Timnas dengan kualitas premium.</p>
+      <p class="mt-2 font-bold text-green-600">Rp320.000</p>
+      <a 
+        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20Timnas%20Indonesia" 
+        target="_blank"
+        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
+      >Beli via WhatsApp</a>
+    </div>
+
+    <!-- Produk 4 -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="https://source.unsplash.com/300x200/?ac-milan,jersey" alt="Jersey 4" class="rounded-xl mb-4 w-full object-cover">
+      <h2 class="text-xl font-semibold">Jersey AC Milan Third</h2>
+      <p class="text-sm text-gray-600 mt-2">Desain modern dan sporty, jersey third AC Milan siap menemani harimu.</p>
+      <p class="mt-2 font-bold text-green-600">Rp355.000</p>
+      <a 
+        href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20pesan%20Jersey%20AC%20Milan%20Third" 
+        target="_blank"
+        class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition"
+      >Beli via WhatsApp</a>
+    </div>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 mt-10 p-4">
+    &copy; 2025 Jersey Keren Store. All rights reserved.
+  </footer>
+
 </body>
 </html>
