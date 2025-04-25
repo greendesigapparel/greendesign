@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timnas Fantasy Batik Home</title>
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    function updateLink(title) {
+      const size = document.querySelector('input[name="size"]:checked')?.value || '';
+      const qty = document.getElementById('qty').value;
+      const total = document.getElementById('total');
+      const basePrice = 350000;
+      total.textContent = 'Rp' + (qty * basePrice).toLocaleString();
+
+      const link = document.getElementById('wa-link');
+      const text = `Halo saya ingin memesan $Timnas Fantasy Batik Home ukuran ${size} sebanyak ${qty}`;
+      link.href = 'https://wa.me/62811555943?text=' + encodeURIComponent(text);
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html"><img src="../images/logo-jersey.png" alt="Logo" class="logo-img"></a>
+  </header>
+  <div class="detail-container">
+    <img src="../images/timnas1.jpg" alt="Timnas Fantasy Batik Home" class="product-img">
+    <h2>Timnas Fantasy Batik Home</h2>
+    <p>Rp350.000</p>
+    <div class="ukuran-option" onchange="updateLink('Timnas Fantasy Batik Home')">
+      <label><input type="radio" name="size" value="S"> S</label>
+      <label><input type="radio" name="size" value="M"> M</label>
+      <label><input type="radio" name="size" value="L"> L</label>
+      <label><input type="radio" name="size" value="XL"> XL</label>
+      <label><input type="radio" name="size" value="XXL"> XXL</label>
+      <label><input type="radio" name="size" value="XXXL"> XXXL</label>
+    </div>
+    <div>
+      <label>Jumlah: <input type="number" id="qty" value="1" min="1" onchange="updateLink('Timnas Fantasy Batik Home')"></label>
+    </div>
+    <div>Total: <span id="total">Rp350.000</span></div>
+    <a id="wa-link" class="btn-whatsapp" href="https://wa.me/62811555943" target="_blank">Pesan via WhatsApp</a>
+  </div>
+</body>
+</html>
